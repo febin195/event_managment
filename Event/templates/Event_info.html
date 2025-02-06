@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div class="container w-50">
+    <h1>Details</h1>
+
+   
+    <div class="mx-5">
+    <table border="1" class='' style="">
+
+        <tr>
+            <td>Event title</td>
+            <td>DATE</td>
+            <td>DESCRIPTION</td>
+            
+        </tr>
+        {%for i in data%}
+       
+        <tr>
+            <td>{{i.Title}}</td>
+            <td>{{i.date}}</td>
+            
+        </tr>
+
+        {%endfor%}
+    </table>
+    </div>
+   </div>
+
+   
+
+
+   
+   
+    
+</body>
+</html>
